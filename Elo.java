@@ -1,7 +1,5 @@
-import java.util.Arrays;
-import java.util.HashMap;
-
 public class Elo {
+    
     public static double expectedScore (int R1, int R2) {
         return 1.0 /( 1.0 + Math.pow(10.0, ((double) (R2 - R1) ) / 400));
     }
